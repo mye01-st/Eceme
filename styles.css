@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&display=swap');
+
+body {
+  margin: 0; padding: 0;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  font-family: 'Roboto', sans-serif;
+  color: #4b2e3e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  width: 90vw;
+  background: #fff0f5cc;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+  position: relative;
+}
+
+h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  color: #d6336c;
+  text-shadow: 1px 1px 3px #f8bbd0;
+}
+
+.youtube-player {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-player iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d6336c66;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.cards-container button {
+  background: #f8bbd0;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9c1a3a;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #f4a1bc;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cards-container button:hover,
+.cards-container button.active {
+  background: #d6336c;
+  color: white;
+  transform: scale(1.15);
+}
+
+.poem-display {
+  background: #fff0f5cc;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+  min-height: 100px;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #6e2a45;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+
+.footer-note {
+  margin-top: 2rem;
+  background: #fce4eccc;
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  color: #9c1a3a;
+  font-style: italic;
+  box-shadow: 0 0 10px #f8bbd0;
+}
+
+.footer-note h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #d6336c;
+}
+
+.footer-note p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.footer-icons {
+  font-size: 2rem;
+  user-select: none;
+}
+
+footer {
+  font-size: 1.2rem;
+  color: #d6336c;
+  font-style: italic;
+}
